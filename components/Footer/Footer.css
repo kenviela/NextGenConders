@@ -1,0 +1,28 @@
+/* Contenedor principal */
+.contenedor {
+  display: flex; /* flex */
+  flex-direction: column; /* flex-col */
+  gap: 2rem; /* gap-8 → 2rem */
+  padding-left: 1.25rem; /* px-5 → 1.25rem */
+  padding-right: 1.25rem; /* px-5 → 1.25rem */
+  padding-top: 5rem; /* pt-20 → 5rem */
+  padding-bottom: 2.5rem; /* pb-10 → 2.5rem */
+  text-align: center; /* text-center */
+  margin-top: 2.5rem; /* mt-10 → 2.5rem */
+  container-type: inline-size; /* @container → equivalente en CSS nativo */
+}
+
+/* Texto dentro del párrafo */
+.contenedor p {
+  color: var(--text-muted-light); /* text-text-muted-light */
+  font-size: 0.875rem; /* text-sm → 14px */
+  font-weight: 400; /* font-normal */
+  line-height: 1.5; /* leading-normal */
+}
+
+/* Modo oscuro */
+@media (prefers-color-scheme: dark) {
+  .contenedor p {
+    color: var(--text-muted-dark); /* dark:text-text-muted-dark */
+  }
+}
