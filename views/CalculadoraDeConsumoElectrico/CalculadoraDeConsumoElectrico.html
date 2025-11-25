@@ -4,31 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora de Consumo Eléctrico</title>
-    <link rel="stylesheet" href="CalculadoraDeConsumoElectrico.css">
-</head>
-<body>
-    <div class="calculator-container">
-        <h1>Calculadora de Consumo Eléctrico</h1>
-        
-        <div class="input-group">
-            <label for="potencia">Potencia del Aparato (Vatios):</label>
-            <input type="number" id="potencia" value="100" min="0" required>
-        </div>
-        
-        <div class="input-group">
-            <label for="horas">Horas de Uso Diario:</label>
-            <input type="number" id="horas" value="1" min="0" step="0.1" required>
-        </div>
-        
-        <div class="input-group">
-            <label for="costo">Costo por kWh (unidad monetaria):</label>
-            <input type="number" id="costo" value="0.15" min="0" step="0.01" required>
     <link rel="stylesheet" href="CalculadoraDeConsumoElectrico.css" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -96,43 +77,69 @@
                 href="../seccionExplorar.html"
                 >Explorar</a
               >
+              <a
+                class="text-gray-600 dark:text-gray-300 text-sm font-medium leading-normal"
+                href="../CalculadoraDeConsumoElectrico/CalculadoraDeConsumoElectrico.html"
+                >Nuestro equipo</a
+              >
             </nav>
           </div>
         </div>
       </div>
     </header>
-    <div class="calculator-container">
-      <h1>Calculadora de Consumo Eléctrico</h1>
 
-      <div class="input-group">
-        <label for="potencia">Potencia del Aparato (Vatios):</label>
-        <input type="number" id="potencia" value="100" min="0" required />
+    <main class="main-container">
+      <h1 class="page-title">Calculadora de Consumo Eléctrico</h1>
+
+      <div class="two-column-layout">
+        <!-- Columna Izquierda: Formulario de Calculadora -->
+        <div class="calculator-column">
+          <div class="calculator-card">
+            <h2 class="section-title">Datos del Aparato</h2>
+
+            <div class="input-group">
+              <label for="potencia">Potencia del Aparato (Vatios):</label>
+              <input type="number" id="potencia" value="100" min="0" required />
+            </div>
+
+            <div class="input-group">
+              <label for="horas">Horas de Uso Diario:</label>
+              <input
+                type="number"
+                id="horas"
+                value="1"
+                min="0"
+                step="0.1"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="costo">Costo por kWh (unidad monetaria):</label>
+              <input
+                type="number"
+                id="costo"
+                value="0.15"
+                min="0"
+                step="0.01"
+                required
+              />
+            </div>
+
+            <button onclick="calcularConsumo()">Calcular Consumo</button>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Resultados -->
+        <div class="results-column">
+          <div class="results-card">
+            <h2 class="section-title">Resultados del Cálculo</h2>
+            <div id="resultado" class="resultado"></div>
+          </div>
+        </div>
       </div>
-
-      <div class="input-group">
-        <label for="horas">Horas de Uso Diario:</label>
-        <input type="number" id="horas" value="1" min="0" step="0.1" required />
-      </div>
-
-      <div class="input-group">
-        <label for="costo">Costo por kWh (unidad monetaria):</label>
-        <input
-          type="number"
-          id="costo"
-          value="0.15"
-          min="0"
-          step="0.01"
-          required
-        />
-      </div>
-
-      <button onclick="calcularConsumo()">Calcular Consumo</button>
-
-      <div id="resultado" class="resultado"></div>
-    </div>
+    </main>
 
     <script src="CalculadoraDeConsumoElectrico.js"></script>
-</body>
-</html>
   </body>
 </html>

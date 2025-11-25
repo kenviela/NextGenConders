@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#f2cc0d",
+              "background-light": "#f8f8f5",
+              "background-dark": "#181711",
+              "card-light": "#ffffff",
+              "card-dark": "#221f10",
+              "text-light-primary": "#181711",
+              "text-dark-primary": "#f8f8f5",
+              "text-light-secondary": "#8a8360",
+              "text-dark-secondary": "#a09b7c",
+              "border-light": "#e6e4db",
+              "border-dark": "#3a3625",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "0.75rem",
+              xl: "1rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-b-[#393628] px-4 sm:px-10 py-3 sticky top-0 z-50 bg-white/80 dark:bg-black/80 backdrop-blur-md"
+    >
+      <div class="flex items-center gap-4 text-black dark:text-white">
+        <div class="size-6 text-primary">
+          <span class="material-symbols-outlined text-3xl">solar_power</span>
+        </div>
+
+        <h2
+          class="text-black dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]"
+        >
+          Nextgen Coders
+        </h2>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-9">
+        <a
+          id="homeLink"
+          class="text-gray-600 dark:text-gray-300 text-sm font-medium leading-normal"
+          href="/index.html"
+          >Home</a
+        >
+
+        <a
+          class="text-gray-600 dark:text-gray-300 text-sm font-medium leading-normal"
+          href="../../views/CalculadoraDeConsumoElectrico/CalculadoraDeConsumoElectrico.html"
+          >Calculadora</a
+        >
+
+        <a
+          class="text-gray-600 dark:text-gray-300 text-sm font-medium leading-normal"
+          href="../../views/Dashboard.html"
+          >Dashboard</a
+        >
+
+        <a
+          class="text-gray-600 dark:text-gray-300 text-sm font-medium leading-normal"
+          href="../../views/seccionExplorar.html"
+          >Explorar</a
+        >
+
+        <a
+          class="text-gray-600 dark:text-gray-300 text-sm font-medium leading-normal"
+          href="../../views/nuestroEquipo.html"
+          >Nuestro equipo</a
+        >
+      </nav>
+
+      <!-- Botón hamburguesa (siempre visible en móvil) -->
+      <button
+        id="menuBtn"
+        class="md:hidden text-gray-600 dark:text-gray-300 text-3xl"
+      >
+        ☰
+      </button>
+
+      <!-- Menú móvil -->
+      <nav
+        id="navMenu"
+        class="hidden absolute top-full left-0 w-full bg-white dark:bg-black border-b border-gray-200 dark:border-gray-700 flex-col gap-4 p-6 md:hidden"
+      >
+        <a
+          id="homeLinkMobile"
+          class="text-gray-700 dark:text-gray-300 text-sm font-medium"
+          href="/index.html"
+          >Home</a
+        >
+
+        <a
+          class="text-gray-700 dark:text-gray-300 text-sm font-medium"
+          href="/views/CalculadoraDeConsumoElectrico/CalculadoraDeConsumoElectrico.html"
+          >Calculadora</a
+        >
+
+        <a
+          class="text-gray-700 dark:text-gray-300 text-sm font-medium"
+          href="/views/Dashboard.html"
+          >Dashboard</a
+        >
+
+        <a
+          class="text-gray-700 dark:text-gray-300 text-sm font-medium"
+          href="/views/seccionExplorar.html"
+          >Explorar</a
+        >
+
+        <a
+          class="text-gray-700 dark:text-gray-300 text-sm font-medium"
+          href="/views/nuestroEquipo.html"
+          >Nuestro equipo</a
+        >
+      </nav>
+    </header>
+    <script src="Header.js"></script>
+  </body>
+</html>

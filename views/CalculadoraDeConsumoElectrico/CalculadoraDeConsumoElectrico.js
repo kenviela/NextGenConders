@@ -58,16 +58,43 @@ function calcularConsumo() {
     // 5. 📊 Mostrar el Resultado
     resultadoDiv.innerHTML = `
         <h3>Estimación de Consumo y Costo</h3>
-        <p>🔌 Consumo Diario: <strong>${consumoDiarioKwh.toFixed(3)} kWh</strong></p>
-        <p>💰 Costo Diario: <strong>${costoDiarioCOP}</strong></p>
-        <p>---</p>
-        <p>⚡ Consumo Mensual (aprox.): <strong>${consumoMensualKwh.toFixed(2)} kWh</strong></p>
-        <p>💸 Costo Mensual (aprox.): <strong>${costoMensualCOP}</strong></p>
         
-        <p>---</p>
-        <p>📅 Consumo Anual (aprox.): <strong>${consumoAnualKwh.toFixed(2)} kWh</strong></p>
-        <p>💵 Costo Anual (aprox.): <strong>${costoAnualCOP}</strong></p>
-        `;
+        <div class="result-card">
+            <h4>📅 Consumo Diario</h4>
+            <div class="result-item">
+                <span class="result-label">⚡ Consumo</span>
+                <span class="result-value">${consumoDiarioKwh.toFixed(3)} kWh</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">💰 Costo</span>
+                <span class="result-value">${costoDiarioCOP}</span>
+            </div>
+        </div>
+
+        <div class="result-card">
+            <h4>📆 Consumo Mensual (aprox.)</h4>
+            <div class="result-item">
+                <span class="result-label">⚡ Consumo</span>
+                <span class="result-value">${consumoMensualKwh.toFixed(2)} kWh</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">💸 Costo</span>
+                <span class="result-value">${costoMensualCOP}</span>
+            </div>
+        </div>
+
+        <div class="result-card">
+            <h4>📊 Consumo Anual (aprox.)</h4>
+            <div class="result-item">
+                <span class="result-label">⚡ Consumo</span>
+                <span class="result-value">${consumoAnualKwh.toFixed(2)} kWh</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">💵 Costo</span>
+                <span class="result-value">${costoAnualCOP}</span>
+            </div>
+        </div>
+    `;
 }
 
 // Opcional: Ejecutar la función una vez al cargar la página para mostrar un resultado inicial.
