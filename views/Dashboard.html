@@ -77,7 +77,7 @@
               </div>
               <div class="flex flex-1 justify-end gap-8">
                 <div class="hidden sm:flex items-center gap-9">
-                    <a
+                  <a
                     class="text-gray-600 dark:text-gray-300 text-sm font-medium leading-normal"
                     href="/index.html"
                     >Home</a
@@ -110,7 +110,7 @@
             <div class="px-4 sm:px-10 py-6">
               <div class="flex items-center justify-between mb-6">
                 <h1 class="text-2xl font-black text-gray-900 dark:text-white">
-                  Dashboard Interactivo
+                  Dashboard Interactivo Generación Eléctrica Solar
                 </h1>
 
                 <div class="flex items-center gap-3">
@@ -182,42 +182,44 @@
               </section>
 
               <!-- Column mapping and filters -->
-              <section class="mb-6 space-y-4">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <section class="mb-6">
+                <div class="flex flex-wrap items-center justify-center gap-3">
                   <input
                     id="col-date"
-                    placeholder="columna fecha (ej: date)"
-                    class="p-2 rounded border bg-white dark:bg-[#2a2a24]"
+                    placeholder="date"
+                    class="p-2 rounded border bg-white dark:bg-[#2a2a24] text-sm w-32"
                   />
                   <input
                     id="col-value"
-                    placeholder="columna valor (ej: value)"
-                    class="p-2 rounded border bg-white dark:bg-[#2a2a24]"
+                    placeholder="value"
+                    class="p-2 rounded border bg-white dark:bg-[#2a2a24] text-sm w-32"
                   />
                   <input
                     id="col-category"
-                    placeholder="columna categoria (opcional)"
-                    class="p-2 rounded border bg-white dark:bg-[#2a2a24]"
+                    placeholder="category"
+                    class="p-2 rounded border bg-white dark:bg-[#2a2a24] text-sm w-32"
                   />
-                </div>
-                <div class="flex flex-wrap gap-2">
                   <input
                     id="date-from"
-                    type="date"
-                    class="p-2 rounded border bg-white dark:bg-[#2a2a24] flex-1 min-w-[150px]"
+                    type="number"
+                    placeholder="Año desde"
+                    min="1900"
+                    max="2100"
+                    class="p-2 rounded border bg-white dark:bg-[#2a2a24] text-sm w-32"
                   />
                   <input
                     id="date-to"
-                    type="date"
-                    class="p-2 rounded border bg-white dark:bg-[#2a2a24] flex-1 min-w-[150px]"
+                    type="number"
+                    placeholder="Año hasta"
+                    min="1900"
+                    max="2100"
+                    class="p-2 rounded border bg-white dark:bg-[#2a2a24] text-sm w-32"
                   />
                   <button
                     id="btn-apply-filter"
-                    class="px-4 py-2 rounded bg-primary text-black font-medium"
+                    class="px-4 py-2 rounded bg-primary text-black font-medium text-sm"
                   >
                     Aplicar
-                  </button>
-                </div>
                   </button>
                 </div>
               </section>
@@ -263,10 +265,7 @@
                 class="text-sm text-gray-600 dark:text-gray-300"
               ></div>
 
-                <iframe
-              src="../components/Footer/Footer.html"
-              scrolling="no"
-            ></iframe>
+      <iframe src="../components/Footer/Footer.html" scrolling="no"></iframe>
             </div>
           </div>
         </div>

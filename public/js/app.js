@@ -65,16 +65,31 @@ function fillDetectedColumns(detected){
   if(detected.category) qs('#col-category').value = detected.category;
 }
 
-/* Filtrar por rango si hay columna fecha */
+/* Filtrar por rango de años si hay columna fecha */
 function applyDateRangeFilter(rows, colDate){
-  const from = qs('#date-from').value;
-  const to = qs('#date-to').value;
-  if(!from && !to) return rows;
+  const fromYear = parseInt(qs('#date-from').value);
+  const toYear = parseInt(qs('#date-to').value);
+  if(!fromYear && !toYear) return rows;
+  
   return rows.filter(r=>{
-    const d = new Date(r[colDate]);
-    if(isNaN(d)) return false;
-    if(from && d < new Date(from)) return false;
-    if(to && d > new Date(to)) return false;
+    const dateStr = r[colDate];
+    if(!dateStr) return false;
+    
+    // Try to extract year from date string
+    const d = new Date(dateStr);
+    let year;
+    
+    if(!isNaN(d)){
+      year = d.getFullYear();
+    } else {
+      // Try to extract year directly from string (e.g., "2025")
+      const match = String(dateStr).match(/\b(19|20)\d{2}\b/);
+      if(match) year = parseInt(match[0]);
+      else return false;
+    }
+    
+    if(fromYear && year < fromYear) return false;
+    if(toYear && year > toYear) return false;
     return true;
   });
 }
