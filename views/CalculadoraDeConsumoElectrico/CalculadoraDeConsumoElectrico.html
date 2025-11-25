@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora de Consumo Eléctrico</title>
     <link rel="stylesheet" href="CalculadoraDeConsumoElectrico.css">
 </head>
@@ -23,14 +23,116 @@
         <div class="input-group">
             <label for="costo">Costo por kWh (unidad monetaria):</label>
             <input type="number" id="costo" value="0.15" min="0" step="0.01" required>
+    <link rel="stylesheet" href="CalculadoraDeConsumoElectrico.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#f2cc0d",
+              "background-light": "#f8f8f5",
+              "background-dark": "#221f10",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header
+      class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center gap-4 text-gray-800 dark:text-gray-200">
+            <span class="material-symbols-outlined text-primary text-3xl"
+              >solar_power</span
+            >
+            <h2 class="text-lg font-bold tracking-[-0.015em]">
+              Nextgen Coders
+            </h2>
+          </div>
+          <div class="hidden md:flex flex-1 justify-end items-center gap-8">
+            <nav class="flex items-center gap-9">
+              <a
+                class="text-gray-600 dark:text-gray-300 text-sm font-medium leading-normal"
+                href="/index.html"
+                >Home</a
+              >
+              <a
+                class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="./views/CalculadoraDeConsumoElectrico/CalculadoraDeConsumoElectrico.html"
+                >Calculadora</a
+              >
+              <a
+                class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="../Dashboard.html"
+                >Dashboard</a
+              >
+
+              <a
+                class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="../seccionExplorar.html"
+                >Explorar</a
+              >
+            </nav>
+          </div>
         </div>
-        
-        <button onclick="calcularConsumo()">Calcular Consumo</button>
-        
-        <div id="resultado" class="resultado">
-            </div>
+      </div>
+    </header>
+    <div class="calculator-container">
+      <h1>Calculadora de Consumo Eléctrico</h1>
+
+      <div class="input-group">
+        <label for="potencia">Potencia del Aparato (Vatios):</label>
+        <input type="number" id="potencia" value="100" min="0" required />
+      </div>
+
+      <div class="input-group">
+        <label for="horas">Horas de Uso Diario:</label>
+        <input type="number" id="horas" value="1" min="0" step="0.1" required />
+      </div>
+
+      <div class="input-group">
+        <label for="costo">Costo por kWh (unidad monetaria):</label>
+        <input
+          type="number"
+          id="costo"
+          value="0.15"
+          min="0"
+          step="0.01"
+          required
+        />
+      </div>
+
+      <button onclick="calcularConsumo()">Calcular Consumo</button>
+
+      <div id="resultado" class="resultado"></div>
     </div>
 
     <script src="CalculadoraDeConsumoElectrico.js"></script>
 </body>
+</html>
+  </body>
 </html>
