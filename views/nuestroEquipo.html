@@ -67,7 +67,7 @@
                 >
                 <a
                   class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
-                  href="Calculadora.html"
+                  href="CalculadoraDeConsumoElectrico/CalculadoraDeConsumoElectrico.html"
                   >Calculadora</a
                 >
                 <a
@@ -81,7 +81,7 @@
                   >Explorar</a
                 >
                 <a
-                  class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
+                  class="text-sm font-medium text-primary dark:text-primary transition-colors"
                   href="nuestroEquipo.html"
                   >Nuestro Equipo</a
                 >
@@ -143,117 +143,251 @@
               </p>
             </div>
 
-            <!-- Team Members Grid - 4 Members in 2x2 -->
-            <div
-              class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto"
-            >
-              <!-- Team Member 1 -->
-              <div
-                class="flex flex-col items-center gap-6 p-8 rounded-xl bg-white dark:bg-background-dark/50 shadow-lg hover:shadow-xl transition-shadow duration-300"
+            <!-- Team Members Connected Layout - Matching Reference Image -->
+            <div class="relative max-w-6xl mx-auto py-16">
+              <!-- SVG Connecting Lines -->
+              <svg
+                class="absolute inset-0 w-full h-full pointer-events-none"
+                style="z-index: 0"
               >
+                <!-- Lines from top row to bottom row -->
+                <line
+                  x1="16%"
+                  y1="35%"
+                  x2="16%"
+                  y2="60%"
+                  stroke="#d1d5db"
+                  stroke-width="2"
+                />
+                <line
+                  x1="16%"
+                  y1="60%"
+                  x2="23%"
+                  y2="60%"
+                  stroke="#d1d5db"
+                  stroke-width="2"
+                />
+
+                <line
+                  x1="50%"
+                  y1="35%"
+                  x2="50%"
+                  y2="60%"
+                  stroke="#d1d5db"
+                  stroke-width="2"
+                />
+                <line
+                  x1="50%"
+                  y1="60%"
+                  x2="43%"
+                  y2="60%"
+                  stroke="#d1d5db"
+                  stroke-width="2"
+                />
+
+                <line
+                  x1="50%"
+                  y1="35%"
+                  x2="50%"
+                  y2="60%"
+                  stroke="#d1d5db"
+                  stroke-width="2"
+                />
+                <line
+                  x1="50%"
+                  y1="60%"
+                  x2="57%"
+                  y2="60%"
+                  stroke="#d1d5db"
+                  stroke-width="2"
+                />
+
+                <line
+                  x1="84%"
+                  y1="35%"
+                  x2="84%"
+                  y2="60%"
+                  stroke="#d1d5db"
+                  stroke-width="2"
+                />
+                <line
+                  x1="84%"
+                  y1="60%"
+                  x2="77%"
+                  y2="60%"
+                  stroke="#d1d5db"
+                  stroke-width="2"
+                />
+              </svg>
+
+              <!-- Top Row - 3 Members with cards above photos -->
+              <div class="grid grid-cols-3 gap-16 max-w-5xl mx-auto mb-32">
+                <!-- Member 1 - Daniela -->
                 <div
-                  class="w-40 h-40 rounded-full bg-gradient-to-br from-primary/30 to-primary/10 flex items-center justify-center overflow-hidden"
+                  class="flex flex-col items-center relative"
+                  style="z-index: 1"
                 >
-                  <span class="material-symbols-outlined text-primary text-8xl"
-                    >person</span
+                  <div
+                    class="bg-white dark:bg-background-dark/50 rounded-lg p-4 shadow-lg mb-6 text-center w-52 border border-gray-200"
                   >
-                  <!-- Reemplazar con: <img src="ruta/a/foto.jpg" alt="Nombre del miembro" class="w-full h-full object-cover" /> -->
+                    <h3
+                      class="text-gray-800 dark:text-gray-200 font-bold text-base mb-1"
+                    >
+                      Daniela
+                    </h3>
+                    <p class="text-primary text-sm font-semibold mb-3">
+                      Ingeniera Solar
+                    </p>
+                    <p
+                      class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed"
+                    >
+                      Especialista en diseño de sistemas fotovoltaicos
+                    </p>
+                  </div>
+                  <div
+                    class="w-44 h-44 rounded-full border-8 border-blue-700 bg-white flex items-center justify-center overflow-hidden shadow-2xl"
+                  >
+                    <span
+                      class="material-symbols-outlined text-blue-700 text-9xl"
+                      >person</span
+                    >
+                    <!-- Reemplazar con: <img src="ruta/foto.jpg" alt="Daniela" class="w-full h-full object-cover" /> -->
+                  </div>
                 </div>
-                <div class="flex flex-col gap-2 text-center">
-                  <h3
-                    class="text-gray-800 dark:text-gray-200 text-xl font-bold"
+
+                <!-- Member 2 - Gustavo -->
+                <div
+                  class="flex flex-col items-center relative"
+                  style="z-index: 1"
+                >
+                  <div
+                    class="bg-white dark:bg-background-dark/50 rounded-lg p-4 shadow-lg mb-6 text-center w-52 border border-gray-200"
                   >
-                    Daniela
-                  </h3>
-                  <p class="text-primary font-semibold text-sm">
-                    Profesional 1
-                  </p>
-                  <p class="text-gray-600 dark:text-gray-400 text-sm">
-                    Especialista en diseño e implementación de sistemas
-                    fotovoltaicos con más de 10 años de experiencia.
-                  </p>
+                    <h3
+                      class="text-gray-800 dark:text-gray-200 font-bold text-base mb-1"
+                    >
+                      Gustavo
+                    </h3>
+                    <p class="text-primary text-sm font-semibold mb-3">
+                      Gestor de Proyectos
+                    </p>
+                    <p
+                      class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed"
+                    >
+                      Planificación y ejecución de proyectos solares
+                    </p>
+                  </div>
+                  <div
+                    class="w-44 h-44 rounded-full border-8 border-blue-700 bg-white flex items-center justify-center overflow-hidden shadow-2xl"
+                  >
+                    <span
+                      class="material-symbols-outlined text-blue-700 text-9xl"
+                      >person</span
+                    >
+                    <!-- Reemplazar con: <img src="ruta/foto.jpg" alt="Gustavo" class="w-full h-full object-cover" /> -->
+                  </div>
+                </div>
+
+                <!-- Member 3 - John -->
+                <div
+                  class="flex flex-col items-center relative"
+                  style="z-index: 1"
+                >
+                  <div
+                    class="bg-white dark:bg-background-dark/50 rounded-lg p-4 shadow-lg mb-6 text-center w-52 border border-gray-200"
+                  >
+                    <h3
+                      class="text-gray-800 dark:text-gray-200 font-bold text-base mb-1"
+                    >
+                      John
+                    </h3>
+                    <p class="text-primary text-sm font-semibold mb-3">
+                      Técnico Instalador
+                    </p>
+                    <p
+                      class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed"
+                    >
+                      Instalación y mantenimiento de sistemas
+                    </p>
+                  </div>
+                  <div
+                    class="w-44 h-44 rounded-full border-8 border-blue-700 bg-white flex items-center justify-center overflow-hidden shadow-2xl"
+                  >
+                    <span
+                      class="material-symbols-outlined text-blue-700 text-9xl"
+                      >person</span
+                    >
+                    <!-- Reemplazar con: <img src="ruta/foto.jpg" alt="John" class="w-full h-full object-cover" /> -->
+                  </div>
                 </div>
               </div>
 
-              <!-- Team Member 2 -->
-              <div
-                class="flex flex-col items-center gap-6 p-8 rounded-xl bg-white dark:bg-background-dark/50 shadow-lg hover:shadow-xl transition-shadow duration-300"
-              >
+              <!-- Bottom Row - 2 Members with photos above cards -->
+              <div class="grid grid-cols-2 gap-24 max-w-3xl mx-auto">
+                <!-- Member 4 - Samuel -->
                 <div
-                  class="w-40 h-40 rounded-full bg-gradient-to-br from-primary/30 to-primary/10 flex items-center justify-center overflow-hidden"
+                  class="flex flex-col items-center relative"
+                  style="z-index: 1"
                 >
-                  <span class="material-symbols-outlined text-primary text-8xl"
-                    >person</span
+                  <div
+                    class="w-40 h-40 rounded-full border-8 border-red-500 bg-white flex items-center justify-center overflow-hidden shadow-2xl mb-6"
                   >
-                  <!-- Reemplazar con: <img src="ruta/a/foto.jpg" alt="Nombre del miembro" class="w-full h-full object-cover" /> -->
-                </div>
-                <div class="flex flex-col gap-2 text-center">
-                  <h3
-                    class="text-gray-800 dark:text-gray-200 text-xl font-bold"
+                    <span
+                      class="material-symbols-outlined text-red-500 text-8xl"
+                      >person</span
+                    >
+                    <!-- Reemplazar con: <img src="ruta/foto.jpg" alt="Samuel" class="w-full h-full object-cover" /> -->
+                  </div>
+                  <div
+                    class="bg-white dark:bg-background-dark/50 rounded-lg p-4 shadow-lg text-center w-52 border border-gray-200"
                   >
-                    Gustavo
-                  </h3>
-                  <p class="text-primary font-semibold text-sm">
-                    Profesional 2
-                  </p>
-                  <p class="text-gray-600 dark:text-gray-400 text-sm">
-                    Gestiona la planificación y ejecución de proyectos solares a
-                    gran escala con excelencia.
-                  </p>
+                    <h3
+                      class="text-gray-800 dark:text-gray-200 font-bold text-base mb-1"
+                    >
+                      Samuel
+                    </h3>
+                    <p class="text-primary text-sm font-semibold mb-3">
+                      Analista Ambiental
+                    </p>
+                    <p
+                      class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed"
+                    >
+                      Impacto ambiental y eficiencia energética
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              <!-- Team Member 3 -->
-              <div
-                class="flex flex-col items-center gap-6 p-8 rounded-xl bg-white dark:bg-background-dark/50 shadow-lg hover:shadow-xl transition-shadow duration-300"
-              >
+                <!-- Member 5 - Kevin -->
                 <div
-                  class="w-40 h-40 rounded-full bg-gradient-to-br from-primary/30 to-primary/10 flex items-center justify-center overflow-hidden"
+                  class="flex flex-col items-center relative"
+                  style="z-index: 1"
                 >
-                  <span class="material-symbols-outlined text-primary text-8xl"
-                    >person</span
+                  <div
+                    class="w-40 h-40 rounded-full border-8 border-red-500 bg-white flex items-center justify-center overflow-hidden shadow-2xl mb-6"
                   >
-                  <!-- Reemplazar con: <img src="ruta/a/foto.jpg" alt="Nombre del miembro" class="w-full h-full object-cover" /> -->
-                </div>
-                <div class="flex flex-col gap-2 text-center">
-                  <h3
-                    class="text-gray-800 dark:text-gray-200 text-xl font-bold"
+                    <span
+                      class="material-symbols-outlined text-red-500 text-8xl"
+                      >person</span
+                    >
+                    <!-- Reemplazar con: <img src="ruta/foto.jpg" alt="Kevin" class="w-full h-full object-cover" /> -->
+                  </div>
+                  <div
+                    class="bg-white dark:bg-background-dark/50 rounded-lg p-4 shadow-lg text-center w-52 border border-gray-200"
                   >
-                    John
-                  </h3>
-                  <p class="text-primary font-semibold text-sm">
-                    Profesional 3
-                  </p>
-                  <p class="text-gray-600 dark:text-gray-400 text-sm">
-                    Experto en instalación y mantenimiento de sistemas solares
-                    residenciales y comerciales.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Team Member 4 -->
-              <div
-                class="flex flex-col items-center gap-6 p-8 rounded-xl bg-white dark:bg-background-dark/50 shadow-lg hover:shadow-xl transition-shadow duration-300"
-              >
-                <div
-                  class="w-40 h-40 rounded-full bg-gradient-to-br from-primary/30 to-primary/10 flex items-center justify-center overflow-hidden"
-                >
-                  <span class="material-symbols-outlined text-primary text-8xl"
-                    >person</span
-                  >
-                  <!-- Reemplazar con: <img src="ruta/a/foto.jpg" alt="Nombre del miembro" class="w-full h-full object-cover" /> -->
-                </div>
-                <div class="flex flex-col gap-2 text-center">
-                  <h3
-                    class="text-gray-800 dark:text-gray-200 text-xl font-bold"
-                  >
-                    Samuel
-                  </h3>
-                  <p class="text-primary font-semibold text-sm">Profesional</p>
-                  <p class="text-gray-600 dark:text-gray-400 text-sm">
-                    Analiza el impacto ambiental y desarrolla estrategias para
-                    maximizar la eficiencia energética.
-                  </p>
+                    <h3
+                      class="text-gray-800 dark:text-gray-200 font-bold text-base mb-1"
+                    >
+                      Kevin
+                    </h3>
+                    <p class="text-primary text-sm font-semibold mb-3">
+                      Desarrollador
+                    </p>
+                    <p
+                      class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed"
+                    >
+                      Soluciones tecnológicas y automatización
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
