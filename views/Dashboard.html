@@ -46,6 +46,7 @@
   </head>
 
   <body class="font-display bg-background-light dark:bg-background-dark">
+    <div id="header"></div>
     <div class="relative flex h-auto min-h-screen w-full flex-col">
       <div class="layout-container flex h-full grow flex-col">
         <div
@@ -54,59 +55,6 @@
           <div
             class="layout-content-container flex flex-col max-w-[1280px] flex-1"
           >
-            <header
-              class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-b-[#393628] px-4 sm:px-10 py-3"
-            >
-              <div class="flex items-center gap-4 text-black dark:text-white">
-                <div class="size-6 text-primary">
-                  <svg
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 2.25c.41 0 .75.34.75.75v3a.75.75 0 01-1.5 0v-3c0-.41.34-.75.75-.75zM12 18c.41 0 .75.34.75.75v3a.75.75 0 01-1.5 0v-3c0-.41.34-.75.75-.75zM5.25 12a.75.75 0 00-1.5 0h-3a.75.75 0 000 1.5h3a.75.75 0 001.5 0zM21.75 12a.75.75 0 00-1.5 0h-3a.75.75 0 000 1.5h3a.75.75 0 001.5 0zM17.435 7.315a.75.75 0 00-1.06-1.06l-2.122 2.121a.75.75 0 101.06 1.06l2.122-2.121zM8.685 16.315a.75.75 0 00-1.06-1.06l-2.121 2.12a.75.75 0 101.06 1.06l2.121-2.12zM17.435 17.435a.75.75 0 001.06-1.06l-2.121-2.122a.75.75 0 10-1.06 1.06l2.121 2.122zM8.685 8.685a.75.75 0 001.06-1.06l-2.121-2.122a.75.75 0 10-1.06 1.06l2.121 2.122zM12 7.5a4.5 4.5 0 100 9 4.5 4.5 0 000-9z"
-                    ></path>
-                  </svg>
-                </div>
-                <h2
-                  class="text-black dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]"
-                >
-                  Nextgen Coders
-                </h2>
-              </div>
-              <div class="flex flex-1 justify-end gap-8">
-                <div class="hidden sm:flex items-center gap-9">
-                  <a
-                    class="text-gray-600 dark:text-gray-300 text-sm font-medium leading-normal"
-                    href="/index.html"
-                    >Home</a
-                  >
-                  <a
-                    class="text-gray-600 dark:text-gray-300 text-sm font-medium leading-normal"
-                    href="/views/CalculadoraDeConsumoElectrico/CalculadoraDeConsumoElectrico.html"
-                    >Calculadora</a
-                  >
-                  <a
-                    class="text-primary text-sm font-medium leading-normal"
-                    href="#"
-                    >Dashboard</a
-                  >
-
-                  <a
-                    class="text-gray-600 dark:text-gray-300 text-sm font-medium leading-normal"
-                    href="seccionExplorar.html"
-                    >Explorar</a
-                  >
-                  <a
-                    class="text-gray-600 dark:text-gray-300 text-sm font-medium leading-normal"
-                    href="nuestroEquipo.html"
-                    >Nuesto equipo</a
-                  >
-                </div>
-              </div>
-            </header>
-
             <div class="px-4 sm:px-10 py-6">
               <div class="flex items-center justify-between mb-6">
                 <h1 class="text-2xl font-black text-gray-900 dark:text-white">
@@ -264,8 +212,6 @@
                 id="status"
                 class="text-sm text-gray-600 dark:text-gray-300"
               ></div>
-
-      <iframe src="../components/Footer/Footer.html" scrolling="no"></iframe>
             </div>
           </div>
         </div>
@@ -273,5 +219,7 @@
     </div>
 
     <script src="../public/js/app.js"></script>
+    <script src="/public/js/header.js"></script>
+    <script src="/public/js/footer.js"></script>
   </body>
 </html>

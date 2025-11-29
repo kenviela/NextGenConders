@@ -41,53 +41,7 @@
     </script>
   </head>
   <body>
-    <header
-      class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm"
-    >
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16">
-          <div class="flex items-center gap-4 text-gray-800 dark:text-gray-200">
-            <span class="material-symbols-outlined text-primary text-3xl"
-              >solar_power</span
-            >
-            <h2 class="text-lg font-bold tracking-[-0.015em]">
-              Nextgen Coders
-            </h2>
-          </div>
-          <div class="hidden md:flex flex-1 justify-end items-center gap-8">
-            <nav class="flex items-center gap-9">
-              <a
-                class="text-gray-600 dark:text-gray-300 text-sm font-medium leading-normal"
-                href="/index.html"
-                >Home</a
-              >
-              <a
-                class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
-                href="./views/CalculadoraDeConsumoElectrico/CalculadoraDeConsumoElectrico.html"
-                >Calculadora</a
-              >
-              <a
-                class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
-                href="../Dashboard.html"
-                >Dashboard</a
-              >
-
-              <a
-                class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
-                href="../seccionExplorar.html"
-                >Explorar</a
-              >
-              <a
-                class="text-gray-600 dark:text-gray-300 text-sm font-medium leading-normal"
-                href="../CalculadoraDeConsumoElectrico/CalculadoraDeConsumoElectrico.html"
-                >Nuestro equipo</a
-              >
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
-
+    <div id="header"></div>
     <main class="main-container">
       <h1 class="page-title">Calculadora de Consumo Eléctrico</h1>
 
@@ -139,7 +93,8 @@
         </div>
       </div>
     </main>
-
-    <iframe src="../components/Footer/Footer.html" scrolling="no"></iframe>
+    <script src="CalculadoraDeConsumoElectrico.js"></script>
+    <script src="/public/js/header.js"></script>
+    <script src="/public/js/footer.js"></script>
   </body>
 </html>
