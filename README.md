@@ -29,7 +29,7 @@ Plataforma web desarrollada por el equipo NextGen Coders para ofrecer herramient
 NextGenCoders/
 ├── components/ # Header, Footer y otros bloques reutilizables
 ├── public/js # Scripts externos (headerLoader.js, footerLoader.js)
-├── views/ # Vistas principales (Calculadora, Dashboard, etc.)
+├── views/  # Vistas principales (Calculadora, Dashboard, etc.)
 ├── index.html # Página inicial
 ├── .gitignore
 
@@ -39,7 +39,7 @@ NextGenCoders/
 
 - Abre el proyecto en tu editor (VS Code recomendado).
 
-- Inicia un servidor local (ej. con la extensión Live Server).
+- Inicia un servidor local.
 
 - Navega a index.html para explorar la aplicación.
 
