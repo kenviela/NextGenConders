@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   background-color: #f8f8f5;
   min-height: 100vh;
   padding: 0;
@@ -109,7 +109,7 @@ input[type="number"] {
   font-size: 1.05rem;
   transition: all 0.3s ease;
   background: #fafafa;
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
 }
 
 input[type="number"]:focus {
@@ -124,7 +124,7 @@ input[type="number"]:hover {
   background: #fff;
 }
 
-button {
+/* button {
   width: 100%;
   padding: 16px;
   background: #f2cc0d;
@@ -147,7 +147,7 @@ button:hover {
 
 button:active {
   transform: translateY(0);
-}
+} */
 
 .resultado {
   padding: 0;
@@ -193,7 +193,7 @@ button:active {
 }
 
 .result-card h4::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 3px;
   height: 18px;
