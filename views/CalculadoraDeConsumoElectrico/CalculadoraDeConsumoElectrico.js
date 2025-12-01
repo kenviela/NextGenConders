@@ -28,7 +28,7 @@ function calcularConsumo() {
     }
     // FIN DEL PASO 2
 
-   // 3. 🧠 REALIZAR LOS CÁLCULOS
+   // 3. REALIZAR LOS CÁLCULOS
     // Cálculo de Consumo Diario (kWh) y Costo Diario (COP)
     const consumoDiarioKwh = (potenciaVatios * horasDiarias) / 1000;
     const costoDiario = consumoDiarioKwh * costoPorKwh;
@@ -41,7 +41,7 @@ function calcularConsumo() {
     const consumoAnualKwh = consumoDiarioKwh * 365;
     const costoAnual = costoDiario * 365;
 
-    // 4. 💰 Formatear los costos a Pesos Colombianos (COP)
+    // 4. Formatear los costos a Pesos Colombianos (COP)
     const formatoCOP = (cantidad) => {
         // Usa 'es-CO' para el formato de Colombia ($ 12.345,67)
         return cantidad.toLocaleString('es-CO', {
@@ -55,7 +55,7 @@ function calcularConsumo() {
     const costoMensualCOP = formatoCOP(costoMensual);
     const costoAnualCOP = formatoCOP(costoAnual);
 
-    // 5. 📊 Mostrar el Resultado
+    // 5. Mostrar el Resultado
     resultadoDiv.innerHTML = `
         <h3>Estimación de Consumo y Costo</h3>
         
